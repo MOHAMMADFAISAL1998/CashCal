@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Sansita&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-div">
+            <h3>Enter Quantity</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pieces</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="txt2000" placeholder="2000" onchange="TotalValue()"> </td>
+                        <td><input type="text" id="txt2000Total" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="txt500" placeholder="500" onchange="TotalValue()"> </td>
+                        <td><input type="text" id="txt500Total" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="txt200" placeholder="200" onchange="TotalValue()"> </td>
+                        <td><input type="text" id="txt200Total" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="txt100" placeholder="100" onchange="TotalValue()"> </td>
+                        <td><input type="text" id="txt100Total" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="txt50" placeholder="50" onchange="TotalValue()"> </td>
+                        <td><input type="text" id="txt50Total" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="txt10" placeholder="10" onchange="TotalValue()"> </td>
+                        <td><input type="text" id="txt10Total" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><button id="total" onclick="GrandTotal()">Total:</button></td>
+                        <td><input type="text" id="GrandTotal" disabled></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
